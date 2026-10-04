@@ -2,6 +2,7 @@ import Button from "./Components/Button";
 import Bio from "./Components/Bio";
 import { FiMail, FiMapPin } from "react-icons/fi";
 import { getSocialLinks, getTechnologies, getTools } from "./lib/data";
+import Tabs from "./Components/Portfolio/Tabs";
 
 export default function Home() {
   const technologies  = getTechnologies();
@@ -10,14 +11,14 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col md:flex-row gap-8 items-start md:justify-center md:px-24 md:py-10 bg-gray-900">
-      <div className="h-full w-full md:w-1/4 order-2 md:order-1 px-4 md:px-24 md:-mr-8">
+      <div className="h-full w-full md:w-1/6 order-2 md:order-1 px-6 md:px-0">
         {/* Tech Stack */}
         <h3 className="text-xl">Tech Stack</h3>
         <div className="flex flex-col gap-4 mt-4">
           {technologies.map(({ name, icon: Icon}) => (
             <span
               key={name}
-              className="flex gap-8 hover:text-sky-600 text-lg items-center"
+              className="flex gap-8 hover:text-sky-600 cursor-default text-lg items-center"
             >
               <Icon className={`h-6 w-6`} />
               {name}
@@ -33,7 +34,7 @@ export default function Home() {
           {tools.map(({ name, icon: Icon}) => (
             <span
               key={name}
-              className="flex gap-8 hover:text-sky-600 text-lg items-center"
+              className="flex gap-8 hover:text-sky-600 cursor-default text-lg items-center"
             >
               <Icon className={`h-6 w-6`} />
               {name}
@@ -43,15 +44,15 @@ export default function Home() {
 
         <br/><br/>
 
-        <Button label="Hire Me" href="/some-link" />
+        <Button label="Discover" href="https://bit.ly/kathleen-cv" />
       </div>
 
-      <div className="md:border-2 md:border-sky-600 rounded h-full w-full md:w-3/5 order-1 md:order-2">
+      <div className="md:border-2 md:border-sky-600 rounded-lg h-full w-full md:w-4/5 order-1 md:order-2">
         {/* Header */}
-        <div className="relative">
-          <img src="/bg.jpg" alt="Description" className="h-48 w-full object-cover" />
+        <div className="relative rounded-t-lg">
+          <img src="/bg.jpg" alt="Description" className="h-48 w-full object-cover rounded-t-lg" />
           <div className="w-full text-right p-4">
-            <Button label="Hire Me" href="/some-link" />
+            <Button label="Discover" href="https://bit.ly/kathleen-cv" />
           </div>
 
           <img src="profile.jpg" alt="Profile" className="h-32 w-32 rounded-full border-5 border-gray-900 absolute bottom-0 left-5 md:left-10 transform" />
@@ -60,22 +61,26 @@ export default function Home() {
         {/* Bio */}
         <div className="p-4">
           <h1 className="text-2xl font-semibold">Kathleen Iza Monzales</h1>
-          <h3 className="text-lg text-gray-400">@Full Stack Software Engineer</h3>
+          <h3 className="text-lg text-gray-400">Full Stack Software Engineer</h3>
           <br/>
           <Bio />
         </div>
 
         {/* Links */}
         <div className="p-4 w-full flex flex-col md:flex-row gap-4 md:gap-12">
-          <span className="text-gray-400 flex gap-2">
+          <span className="text-gray-400 flex gap-2 hover:text-sky-600 hover:cursor-default">
             <FiMapPin className="h-5 w-5 text-gray-400" />
             Asia-Pacific (APAC)
           </span>
-          <span className="text-gray-400 flex gap-2">
+          <span className="text-gray-400 flex gap-2 hover:text-sky-600 hover:cursor-pointer">
             <FiMail className="h-5 w-5 text-gray-400" />
-            monzalesiza@gmail.com
+            <a href="mailto:monzalesiza@gmail.com">monzalesiza@gmail.com</a>
           </span>
         </div>
+
+        <br/><br/>
+        
+        <Tabs />
       </div>
 
       <div className="h-full w-full md:w-1/4 order-3 flex flex-col gap-4">
