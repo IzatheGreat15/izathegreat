@@ -53,7 +53,7 @@ export function getSocialLinks() {
             name: 'CV',
             username: 'Kathleen Iza Monzales',
             icon: GrDocumentText,
-            url: 'https://bit.ly/kathleen-cv',
+            url: '/Kathleen%20Iza%20Monzales%20Resume.pdf',
         },
     ];
 }

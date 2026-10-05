@@ -44,7 +44,7 @@ export default function Home() {
 
         <br/><br/>
 
-        <Button label="Discover" href="https://bit.ly/kathleen-cv" />
+        <Button label="Discover" href="/Kathleen%20Iza%20Monzales%20Resume.pdf" />
       </div>
 
       <div className="md:border-2 md:border-sky-600 rounded-lg h-full w-full md:w-4/5 order-1 md:order-2">
@@ -52,7 +52,7 @@ export default function Home() {
         <div className="relative rounded-t-lg">
           <img src="/bg.jpg" alt="Description" className="h-48 w-full object-cover rounded-t-lg" />
           <div className="w-full text-right p-4">
-            <Button label="Discover" href="https://bit.ly/kathleen-cv" />
+            <Button label="Discover" href="/Kathleen%20Iza%20Monzales%20Resume.pdf" />
           </div>
 
           <img src="profile.jpg" alt="Profile" className="h-32 w-32 rounded-full border-5 border-gray-900 absolute bottom-0 left-5 md:left-10 transform" />
