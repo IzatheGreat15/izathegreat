@@ -60,7 +60,7 @@ export default function Home() {
         
         {/* Bio */}
         <div className="p-4">
-          <h1 className="text-2xl font-semibold">Kathleen Iza Monzales</h1>
+          <h1 className="text-2xl font-semibold">Kathleen Iza Monzales 123</h1>
           <h3 className="text-lg text-gray-400">Full Stack Software Engineer</h3>
           <br/>
           <Bio />
