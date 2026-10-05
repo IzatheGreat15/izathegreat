@@ -10,7 +10,7 @@ export default function Home() {
   const socialLinks = getSocialLinks();
 
   return (
-    <main className="flex min-h-screen flex-col md:flex-row gap-8 items-start md:justify-center md:px-24 md:py-10 bg-gray-900">
+    <main className="flex min-h-screen flex-col md:flex-row gap-8 items-start md:justify-center md:px-24 md:py-10 bg-gray-900 text-gray-300">
       <div className="h-full w-full md:w-1/6 order-2 md:order-1 px-6 md:px-0">
         {/* Tech Stack */}
         <h3 className="text-xl">Tech Stack</h3>
